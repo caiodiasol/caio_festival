@@ -7,20 +7,64 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/logo/Logo_caio_festival.png" alt="Logo do Festival">
             <p class="hero__text">
-                A celebração do melhor dia da minha vida começa em 10d 5h 20m 5s
+                A celebração do melhor dia da sua vida começa em <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        <b>Localização</b>
+                        Vale do Capão - Chapada Diamantina - BA
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Ingresso</b>
+                        1 ETH
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        <b>Quando?</b>
+                        07/05/2025 às 22h
+                    </li>
+                </ul>
+                <a href="#" class="button button--primary">
+                    Garanta seu passaporte
+                </a>
+            </div>
         </div>
     </header>
 
+    <section class="event event--party">
+        <div class="container" data-aos="fade-right">
+            <div class="event__datails">
+                <h2 class="event__datails__title">O Evento</h2>
+                <p class="event__datails__text">
+                    Prepare-se para uma noite inesquecível de celebração e música eletrônica! Venha comemorar o aniversário de Caio em um evento eletrizante, repleto de beats pulsantes e vibes incríveis. Desde 1986, Caio tem sido uma inspiração, e agora é a sua chance de fazer parte desta celebração épica. Rodeado por árvores majestosas e um céu estrelado, deixe a música te levar em uma jornada mágica.             
+                </p>
+            </div>
+            <img class="event__image" src="./images/festa_dj.jpeg" alt="Imagem da festa">
+        </div>
+    </section>
 
+    <section class="event event--localization event--image-left" >
+        <div class="container" data-aos="fade-left">
+            <div class="event__datails">
+                <h2 class="event__datails__title">Localização</h2>
+                <p class="event__datails__text">
+                    Mergulhe na majestosa beleza do Vale do Capão, na Chapada Diamantina, e prepare-se para uma experiência sonora única! Envolto por imponentes serras e cachoeiras cristalinas, nosso evento de música eletrônica te levará a um paraíso natural onde ritmos eletrizantes se fundem com a serenidade da natureza. Desde trilhas cobertas de verde até o céu estrelado da Chapada, o cenário é simplesmente perfeito para celebrar a vida e a música. Traga sua energia, seu melhor ritmo e venha dançar sob as estrelas. Conecte-se com a natureza e a música em um evento que promete ser inesquecível na sua vida!
+                </p>
+            </div>
+            <img class="event__image" src="./images/festa_pscina.jpg" alt="Imagem piscina">
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./scripts/main.js"></script>
 </body>
 </html>
